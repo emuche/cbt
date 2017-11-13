@@ -1,0 +1,215 @@
+
+#select_option{
+    cursor: pointer;
+}	
+
+.exam_radio{
+    cursor: pointer;
+}   
+
+
+#nav{
+    height: 41px;
+    font: 12px Geneva, Arial, Helvetica, sans-serif;
+    background: #2C3E50;
+    border: 1px solid #2C3E50;  
+    border-radius: 3px;
+    margin-left: 0px;
+    padding-left: 0px;
+    cursor: pointer;
+}   
+
+#nav li{
+    list-style: none;
+    display: block;
+    float: left;
+    height: 40px;
+    position: relative;
+    width: 25%;
+}
+
+#nav li a{
+    padding: 0px 10px 0px 30px;
+    margin: 0px 0;
+    line-height: 40px;
+    text-decoration: none;
+    height:40px;
+    color: #FFF;
+}
+
+#nav ul{
+    background: #2C3E50; 
+    padding: 0px;
+    border-radius: 0px 0px 3px 3px;
+    box-shadow: 2px 2px 3px #2C3E50;
+    width:100%;
+
+}
+
+
+#nav li:hover{
+    background: #16A085;
+}
+#nav li a{
+    display: block;
+}
+#nav ul li {
+    width:100%;
+    height:39px;
+}
+#nav ul li a {
+    color:#fff;
+}
+#nav ul li:hover{background: #16A085;}
+#nav ul li:last-child { border-bottom: none;}
+#nav ul li:last-child a{ border-bottom: none;}
+#student a{ border-right: none;}
+
+/* Sub menus */
+#nav ul{
+    display: none;
+    visibility:hidden;
+    position: absolute;
+    top: 41px;
+
+}
+
+/* Third-level menus */
+#nav ul ul{
+    top: 0px;
+    left:100%;
+    display: none;
+    visibility:hidden;
+    border: 1px solid #2C3E50;
+}
+/* Fourth-level menus */
+#nav ul ul ul{
+    top: 0px;
+    left:100%;
+    display: none;
+    visibility:hidden;
+    border: 1px solid #2C3E50;
+    width:100%;
+}
+#nav ul ul ul ul{
+    top: 0px;
+    left:100%;
+    display: none;
+    visibility:hidden;
+    border: 1px solid #2C3E50;
+    width:100%;
+}
+
+#nav ul li{
+    display: block;
+    visibility:visible;
+}
+#nav li:hover > ul{
+    display: block;
+    visibility:visible;
+    position: absolute;
+}
+
+label {
+	cursor: pointer;
+	font-family: sans-serif;
+}
+
+#defaultCountdown{
+	width: 240px;
+	height: 45px;
+}
+
+.divCenter{
+	float: none;
+	margin: 0 auto;
+}
+
+.divLeft{
+	float: left;
+	margin: auto auto;
+}
+
+.divRight{
+	float: right;
+	margin: auto auto;
+}
+
+.divNewLine{
+	clear: both;
+}
+
+.ui-menu{
+	width: 150px;
+}
+
+nav{
+	margin-bottom: 0px;
+}
+
+body{
+	background-color: grey;
+}
+
+.dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-submenu .dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: -1px;
+}
+
+/* Sidebar */
+#sidebar-wrapper{
+	z-index: 1;
+	position: absolute;
+	width: 0;
+	height: 100%;
+	overflow-y: hidden;
+	background: #2C3E50; 
+	opacity: 0.9;
+	transition: width 0.2s;
+}
+
+/* main content  */
+#page-content-wrapper{
+	width: 100%;
+	position: absolute;
+	padding: 15px;
+	transition: padding 1s;
+
+}
+
+
+/* change the width of the sidebar to display it */
+#wrapper.menuDisplayed #sidebar-wrapper{
+	width: 200px;
+}
+
+/* change the width of the main page after sidebar expansion */
+#wrapper.menuDisplayed #page-content-wrapper{
+	padding-left: 200px;
+}
+
+/* sidebar styling */
+.sidebar-nav{
+	padding: 0;
+	list-style: none;
+}
+
+.sidebar-nav li{
+	text-indent: 5px;
+	line-height: 40px;
+}
+
+.sidebar-nav li a{
+	display:block;
+	text-decoration: none;
+	color: #ddd;
+}
+
+.sidebar-nav li a:hover{
+	background: #16A085;
+}
